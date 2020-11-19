@@ -76,6 +76,17 @@ header a {
 .version {
    color: #4B8CD2;
 }
+
+.version ul {
+ display: none;
+ list-style-type: none;   
+ padding-left: 0;
+}
+
+.version ul li:nth-child(1) {
+    font-weight: 600;
+}
+
 .button {
     background-image: linear-gradient(to bottom,#4B8CE9 0,#2C66B8 100%);
     border-radius: .238em;
@@ -267,8 +278,30 @@ footer h1 {
     .feature-button {
         width: auto;
     }
+    .tools {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-imgs {
+        display: flex;
+        justify-content: center;
+    }
+    .contribute{
+        display: flex;
+        flex-direction: column;
+    }
     footer ul {
         flex-direction: column;
         align-items: start;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .top-header ul {
+        display: none;
+    }
+
+    .version ul {
+        display: block;
     }
 }
